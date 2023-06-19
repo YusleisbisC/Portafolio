@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*area menu*/
+
+#area__menu{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: auto;
+    height: 80px;
+    background-image: url("Sobre.jpg");
+    background-repeat: round;
+    padding: 2px;
+    box-decoration-break: clone;
+    
+    
+    
+}
+.span_{
+    color: #fff;
+}
+.span_1{
+    color:aqua;
+}
+#span{
+    margin-left: 20px;
+    margin-top: 14px;
+    
+}
+
+#list{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px 5px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+ul a{
+    
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 30px;
+    margin-top: -26px;
+    
+}
+
+a:link{
+    color:#43eaf0;
+}
+a:visited, link :active{
+    color: rgb(140, 140, 187);
+}
+
+a:hover{
+    background-color: blueviolet;
+}
+
+/*layout*/
+
+#conteudo{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: auto;
+    height: 500px;
+    background-color: rgb(236, 241, 245);
+    
+}
+
+#titulo{
+    align-content: flex-start;
+    float:left;
+    justify-items: center;
+    
+}
+
+.imagen_{
+    border-bottom: #43eaf0;
+    margin-top: 15px;
+    float: left;
+}
+#conteudo{
+    clear: both;
+}
+
