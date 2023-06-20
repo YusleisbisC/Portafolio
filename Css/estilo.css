@@ -10,14 +10,12 @@ body{
 /*area menu*/
 
 #area__menu{
-    margin-top: 0px;
-    margin-left: 0px;
-    width: auto;
+    width: 100%;
     height: 80px;
     background-image: url("Sobre.jpg");
-    background-repeat: round;
-    padding: 2px;
-    box-decoration-break: clone;
+    background-size: 100% 100%;
+    padding: 3px;
+    
     
     
     
@@ -65,27 +63,77 @@ a:hover{
 /*layout*/
 
 #conteudo{
-    margin-top: 0px;
+    background-image: url("Pict.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0px 12;
     margin-left: 0px;
     width: auto;
-    height: 500px;
-    background-color: rgb(236, 241, 245);
+    height: 560px;
+    border: 1px solid rgb(12, 12, 12);
+    opacity: 0.5;
     
 }
 
 #titulo{
-    align-content: flex-start;
-    float:left;
-    justify-items: center;
+    font-size: large;
+    margin-left: 700px; 
+    margin-top: 50px; 
+    padding: 15px;
+    
+}
+.paragrafo{
+    padding: 10px;
+}
+
+
+h1{
+    padding-top: 2px;
+}
+
+
+
+/*2da parte*/
+
+#card{
+    background-color: rgb(245, 243, 239);
+    margin-top: 0px;
+    margin-left: 0px;
+    width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    
+  
+
+}
+
+.card_1{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    height: 500px;
+    width: 225px;
+    background-color: #b3c2c2;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0/ 90%);
+    
+    
+    
+}
+.card_1:hover{
+    background-color: rgb(253, 247, 240);
     
 }
 
-.imagen_{
-    border-bottom: #43eaf0;
-    margin-top: 15px;
-    float: left;
+.card__imagenes{
+    padding-bottom: 15px;
+    width: 100%;
+    height: 50%;
+    margin: auto;
 }
-#conteudo{
-    clear: both;
+
+h2{
+    font-size: ;
 }
 
