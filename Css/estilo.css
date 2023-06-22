@@ -1,0 +1,306 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('principal1.jpg');
+    background-size: contain;
+    
+
+}
+
+/*area menu*/
+
+#menu_1 {
+
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.span_ {
+    color: #fff;
+}
+
+.span_1 {
+    color: aqua;
+}
+
+#span {
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.menu2 a {
+    align-items: center;
+    text-decoration: none;
+    padding-inline-start: 20px;
+    margin-right: 25px;
+    font-weight: bolder;
+    color: #43eaf0;
+
+}
+
+.menu2 a:link {
+    color: #43eaf0;
+}
+
+.menu2 a:hover {
+    background-color: rgb(52, 47, 56);
+    opacity: 0.5px;
+}
+
+
+
+/*layout*/
+
+#conteudo {
+    height: 500px;
+}
+
+.down {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#down1 {
+    border-radius: 6px;
+    margin-top: 150px;
+    background-color: rgb(146, 146, 140);
+    margin-left: auto;
+   
+    align-items: center;
+}
+
+
+#down1 a {
+    text-decoration: none;
+    color: black;
+}
+
+#down1 a:hover {
+
+    background-color: rgb(204, 218, 226);
+}
+
+#titulo {
+    font-size: large;
+    padding: 15px;
+    text-align: center;
+    color: rgb(212, 221, 230);
+}
+
+.paragrafo {
+    
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+
+/*2da parte*/
+
+#Proyectos {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    height: 550px;
+
+}
+
+#card {
+    background-color: #04AA6D;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.card_1 {
+    width: 230px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 80px;
+    height: 395px;
+    background-color: #82c2c2;
+    border-radius: 16px;
+    border: 1px solid black;
+    
+
+}
+
+div h2 {
+
+
+    margin: 20px;
+    text-align: center;
+}
+
+.card_1:hover {
+    background-color: rgb(230, 226, 221);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0/ 90%);
+    transform: scale(1.1);
+
+}
+.card__imagenes {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    transition: 0.4s;
+    
+
+}
+
+.button {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+div p {
+    margin-top: 8px;
+    padding: 8px;
+}
+
+
+/*contacto*/
+
+#contacto {
+    margin: auto;
+    opacity: 0.5;
+    background-color: #fff;
+    border: 1px solid black;
+
+}
+
+
+#list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    
+    
+}
+
+textarea {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 18px;
+    resize: none;
+    
+
+}
+
+.input[type=text] {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 25px;
+    
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+
+h2 {
+    text-align: left;
+    color: #ccc;
+
+}
+
+label {
+    align-items: center;
+
+    display: block;
+}
+
+
+h3 {
+    color: #fff;
+    margin: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.butt {
+
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+    margin-top: 30px;
+    
+}
+
+
+@media screen and (max-width: 820px) {
+    header {
+        flex-direction: column;
+        padding: 16px 0;
+        position: relative;
+    }
+}
+
+#menu_1 {
+    
+    display: flex;
+    flex: column;
+    align-items: center;
+}
+
+.span_ {
+    color: #fff;
+}
+
+.span_1 {
+    color: aqua;
+}
+
+#span {
+    margin-left: 20px;   
+}
+
+
+#titulo {
+    font-size: large;
+    padding: 15px;
+    text-align: center;
+    color: rgb(117, 163, 182);
+    margin-top: 20px;
+}
+
+.menu2 a:hover {
+    background-color: rgb(52, 47, 56);
+    opacity: 0.5px;
+}
+
+.down {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
