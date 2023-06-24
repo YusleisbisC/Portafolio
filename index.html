@@ -18,64 +18,47 @@
 <body>
 
 
-    <Header id="menu_1">
-
-
-
+    <Header id="menu_1" class="menu">
         <div id="span">
             <h2><span class="span_">Y</span><span class="span_1">P</span></h2>
         </div>
 
 
         <nav class="menu2">
-
             <a href="#Home">Home</a></li>
-            <a href="#Proyectos">Proyect</a>
+            <a href="#Proyectos">About me</a>
             <a href="#Proyectos">Proyect</a>
             <a href="#contacto">Contact</a>
-
-
         </nav>
-
     </Header>
 
 
     <main><!--inicio del conteudo-->
-        <div id="conteudo"><!--inicio del conteudo-->
-
-
+        <div>
             <div id="titulo">
 
                 <h1>Hey!, I'M Yusleisbis</h1>
 
                 <p class="paragrafo">Frontend Developers</p>
 
-                <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Ullam, rerum blanditiis magni,
-                    fugiat alias expedita id consequatur deserunt
-                    iusto nulla consequuntur hic totam
-                    atque cupiditate enim facere dolorem illum non!
-                </p>
+                <p class="paragrafo">Inovadora, criativa e profissional.
+                    Especializada em Marketing Digital e
+                </p class="paragrafo"> desarrollo web.
+                <p class="paragrafo"> Sou alegre, ambiciosa
+                    e resistente. Amante do meu trabalho
+                    e de alcançar objetivos como equipe.</p>
 
                 <button id="down1">
-
-
                     <a href="Documentos.doc/Yusleisbis.Dcv.pdf" target="_blank" class="down">
-
                         <span>Download Cv</span></a>
                 </button>
             </div>
-
-
         </div>
 
 
         <div id="card"><!--inicio de card-->
 
-
-            <div id="Proyectos">
-                <h2>Proyect</h2>
-            </div>
+            <h2 id="proyect">Proyect</h2>
 
             <div class="card_1">
 
@@ -86,19 +69,18 @@
 
                 <div>
 
-                    <h2>TocBlog</h2>
+                    <div class="desig">
+                        <h2>TocBlog</h2>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellat quae dolore minus ducimus porro numquam,
-
-                    </p>
-
+                        <p>
+                            Um design criado e estruturado usando linguagens de marcação (HTML) e estilo (CSS)
+                        </p>
+                    </div>
                     <div class="button">
 
 
                         <button>
-                            <a href="https://github.com/YusleisbisC/Projecto3-Tegblog" target="_blank">
+                            <a href="https://github.com/YusleisbisC/Projecto3-Tegblog" target="_blank" >
                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by
                                     @fontawesome - https://fontawesome.com License - 
                                     https://fontawesome.com/license
@@ -133,18 +115,20 @@
 
             </div>
 
-            <div class="card_1">
+            <div class="card_2">
 
+                <div class="card-image">
+                    <img src="imagenes/ia.jpg" alt="browser" class="card__imagenes">
+                </div>
+                <div>
 
-                <img src="imagenes/tecno2.jpg" alt="browser" class="card__imagenes" width="200">
-                <div class="card__info">
+                    <div class="desig">
+                        <h2>Anonimus</h2>
+                        <p>
+                            Um design criado e estruturado usando linguagens de marcação (HTML) e estilo (CSS)
 
-                    <h2>Anonimus</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellat quae dolore minus ducimus porro numquam,
-
-                    </p>
+                        </p>
+                    </div>
                     <div class="button">
 
                         <button>
@@ -184,19 +168,23 @@
 
             </div>
 
-            <div class="card_1">
+            <div class="card_3">
 
+                <div class="card-image">
+                    <img src="imagenes/code.jpg" alt="browser" class="card__imagenes">
+                </div>
+                <div>
 
-                <img src="imagenes/tec.jpg" alt="browser" class="card__imagenes" width="200">
-                <div class="card__info">
+                    <div class="desig">
+                        <h2>Receita</h2>
 
-                    <h2>Receita</h2>
+                        <p>
+                            Um design criado e estruturado usando linguagens de marcação (HTML) e estilo (CSS)
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellat quae dolore minus ducimus porro numquam,
+                        </p>
 
-                    </p>
+                    </div>
+
                     <div class="button">
                         <button>
                             <a href="https://github.com/YusleisbisC/Projecto-Totti-3/blob/master/index.html"
@@ -231,8 +219,8 @@
                     </div>
                 </div>
 
-
             </div>
+
 
 
 
@@ -245,40 +233,41 @@
             <div id="contactoF">
                 <h2>Contact me</h2>
             </div>
+            <form id="list">
 
-            <div id="fomr_">
 
-                <form id="list">
-
-                    <label>
-                        Nombre
+                <fieldset>
+                    <div>
+                        <label for="name">Nombre:</label>
                         <input type="text" id="name" name="Nombre" placeholder="Escribe tu nombre" required
                             class="input">
-                    </label>
 
-                    <label>
-                        Sobrenombre
-                        <input type="text" id="name" name="Nombre" placeholder="Escribe tu nombre" required
-                            class="input">
-                    </label>
+                    </div>
 
+                    <div>
+                        <label for="Sobrenombre">Sobrenombre</label>
+                        <input type="text" id="Sobrenombre" name="Sobrenombre" placeholder="Escribe tu Sobrenombre"
+                            required class="input">
+                    </div>
 
-                    <label>
-                        E-mail
-                        <input type="text" id="name" name="Nombre" placeholder="Escribe tu nombre" required
-                            class="input">
-                    </label>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="text" id="Email" name="Email" placeholder="E-mail" required class="input">
+                    </div>
 
-
-
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input type="submit" value="submit">
-                </form>
+                    <div>
 
 
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="submit">
+                    </div>
+
+            </form>
 
 
-            </div>
+
+
+        </div>
 
         </div>
     </main> <!--Fin del conteudo-->
@@ -286,13 +275,14 @@
     <footer>
 
         <div>
-            <h2>Yusleisbis Panqueva C.</h2>
+            <h3 class="Nombre">Yusleisbis Panqueva C.</h3>
         </div>
 
         <div>
             <div>
                 <h3>Redes sociaís:</h3>
             </div>
+
             <nav class="redes">
 
 

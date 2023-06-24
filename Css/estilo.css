@@ -1,25 +1,36 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+
 }
 
-body {
+body,
+html {
     font-family: 'Open Sans', sans-serif;
-    background-image: url('principal1.jpg');
-    background-size: contain;
-
-
+    background-image: url('css-imag/principal1.jpg');
+    margin: 0;
+    overflow: auto;
+    height: 100%;
 }
 
 /*area menu*/
 
 #menu_1 {
-
-    height: 90px;
+    padding: 9px;
     display: flex;
     justify-content: space-between;
+    margin-left: 28px;
     align-items: center;
+}
+
+.menu,
+.conteudo {
+    background-image: url(css-imag/principal1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .span_ {
@@ -29,20 +40,11 @@ body {
 .span_1 {
     color: aqua;
 }
-
-#span {
-    margin-left: 20px;
-    font-weight: bolder;
-}
-
 .menu2 a {
-    align-items: center;
     text-decoration: none;
-    padding-inline-start: 20px;
     margin-right: 25px;
     font-weight: bolder;
     color: #43eaf0;
-
 }
 
 .menu2 a:link {
@@ -55,47 +57,43 @@ body {
 }
 
 
-
 /*layout*/
 
-#conteudo {
-    height: 500px;
-}
 
 .down {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: lighter;
 }
 
 #down1 {
-    border-radius: 6px;
-    margin-top: 150px;
-    background-color: rgb(146, 146, 140);
-    margin-left: auto;
 
+    margin-top: 150px;
+    background-color: rgb(196, 196, 183);
     align-items: center;
+
 }
 
 
 #down1 a {
     text-decoration: none;
-    color: black;
+    color: rgb(10, 10, 10);
+    background-color: #daf2f3;
+    border: 1px solid #6eaab4;
 }
 
 #down1 a:hover {
-
-    background-color: rgb(204, 218, 226);
+    background-color: rgb(94, 102, 102);
 }
 
 #titulo {
     font-size: large;
     padding: 15px;
+    font-weight: bolder;
     text-align: center;
     color: rgb(212, 221, 230);
 }
 
 .paragrafo {
-
     margin-top: 20px;
     font-weight: lighter;
 }
@@ -103,64 +101,63 @@ body {
 
 /*2da parte*/
 
-#Proyectos {
-    font-size: 24px;
-    margin-top: 20px;
-    font-weight: bold;
-    height: 550px;
-
-}
-
 #card {
-    background-color: #04AA6D;
-    opacity: 0.5;
+    opacity: 0.8;
+    height: 550px;
     display: flex;
-    justify-content: space-around;
-
-
+    justify-content: space-evenly;
+    background-image: url(css-imag/frecuencia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 10px;
 }
 
-.card_1 {
+#proyect {
+    border: 1px solid rgb(42, 34, 155);
+    height: 0px;
+    color: #e3eaeb;
+}
+
+.card_1,
+.card_2,
+.card_3 {
     width: 230px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 80px;
     height: 395px;
     background-color: #82c2c2;
     border-radius: 16px;
-    border: 1px solid black;
-
-
+    border: 1px solid #ccc;
+    margin: 10px;
+    margin-top: 60px;
 }
 
-div h2 {
-
-
-    margin: 20px;
+.desig {
+    margin: 10px;
     text-align: center;
+    color: #0c0c0c;
 }
 
-.card_1:hover {
+.card_1:hover,
+.card_2:hover,
+.card_3:hover {
     background-color: rgb(230, 226, 221);
     box-shadow: 0 1px 2px 0 rgb(0 0 0/ 90%);
     transform: scale(1.1);
-
 }
 
 .card__imagenes {
     width: 100%;
     border-radius: 16px 16px 0 0;
     transition: 0.4s;
-
-
+    height:120px;
 }
 
+
 .button {
-    margin-top: 8px;
+    margin-top: 9px;
     display: flex;
     justify-content: space-evenly;
-
-
 }
 
 .button a {
@@ -178,11 +175,36 @@ div p {
 /*contacto*/
 
 #contacto {
-    margin: auto;
+    clear: both;
+    padding: 20px;
+    height: 100%;
+    background-image: url(css-imag/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     opacity: 0.5;
-    background-color: #fff;
-    border: 1px solid black;
+    
+}
 
+#contactoF {
+    float: left;
+    border: 1px solid rgb(42, 34, 155);
+    height: 0px;
+    text-align: center;
+    color: #0d0e0e;
+    margin-left: 50px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+fieldset {
+    float: right;
+    padding: 30px;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    height: 500px;
+    width: 650px;
 }
 
 
@@ -191,26 +213,22 @@ div p {
     flex-direction: column;
     align-items: flex-start;
     align-items: center;
-
-
 }
 
 textarea {
     margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 10px 18px;
+    padding: 10px 12px;
     resize: none;
-
-
 }
 
 .input[type=text] {
     padding: 10px 18px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-top: 25px;
-
+    margin-top: 15px;
+    width: 100%;
 }
 
 input[type=button],
@@ -218,41 +236,161 @@ input[type=submit],
 input[type=reset] {
     background-color: #04AA6D;
     color: white;
-    padding: 16px 32px;
+    padding: 10px 10px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-
 }
 
-
-h2 {
-    text-align: left;
-    color: #ccc;
-
-}
 
 label {
-    align-items: center;
-
+    padding: 5px;
     display: block;
 }
 
+footer {
+    text-align: center;
+    background-image: url(css-imag/geo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50%;
+    opacity: 0.5;
+    
+}
 
 h3 {
-    color: #fff;
+    color: #efeff1;
     margin: 15px;
     padding: 10px;
-    margin-bottom: 15px;
-
+    font-size: 20px;
 }
 
 .butt {
-
     border-radius: 10px;
-    padding: 10px;
-    font-weight: lighter;
+    padding: 18px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 20px;
+}
 
+
+
+@media (max-width: 840px) {
+
+    #menu_1 {
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: row;
+        padding: 16px 0;
+        position: relative;
+
+    }
+
+    #card {
+        background-color: #8d918f;
+        opacity: 0.5;
+        border: 1px solid #ccc;
+        margin-bottom: 16px;
+        height: 550px;
+        clear: both;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+
+    .card_1,
+    .card_2,
+    .card_3 {
+        width: 230px;
+        margin-top: 80px;
+        height: 395px;
+        background-color: #82c2c2;
+        border-radius: 16px;
+        border: 1px solid #ccc;
+        float: left;
+        margin: 10px;
+        margin-top: 80px;
+
+
+
+    }
+    #contacto {
+        clear: both;
+        padding: 1px;
+        background-image: url(css-imag/fon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+
+        
+    }
+
+    fieldset {
+        float: right;
+        padding: 20px;
+        background: #f8f8f8;
+        border: 1px solid #ccc;
+        height: 500px;
+        width: 100%
+    }
+    
+}
+
+@media (max-width: 621px) {
+
+    #menu_1 {
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: column;
+        padding: 16px 0;
+        position: relative;
+
+    }
+
+    .card_1,
+    .card_2,
+    .card_3 {
+        width: 250px;
+        height: 420px;
+        background-color: #82c2c2;
+        border-radius: 16px;
+        border: 1px solid #ccc;
+        float: left;
+        margin: 10px;
+        margin-top: 80px;
+        flex-direction: column;
+        position: relative;
+
+
+    }
+
+    #card {
+        background-color: #8d918f;
+        opacity: 0.5;
+        border: 1px solid #ccc;
+        margin-bottom: 16px;
+        height: 550px;
+        clear: both;
+        max-width: 100%;
+        max-height: 100%;
+        
+        
+
+
+    }
+    #proyect {
+        border: 1px solid rgb(42, 34, 155);
+        height: 0px;
+        color: #e3eaeb;
+        margin: 20px;
+        
+    }
+    
 }
