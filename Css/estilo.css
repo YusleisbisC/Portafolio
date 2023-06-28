@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body,
@@ -19,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-left: 28px;
-    align-items: center; 
+    align-items: center;
 }
 
 .span_ {
@@ -53,25 +52,14 @@ nav a:hover {
 .down {
     font-size: 20px;
     font-weight: bold;
-}
-
-#down1 {
-    margin-top: 150px;
-    background-color: rgb(196, 196, 183);
-    align-items: center;
-
-}
-
-#down1 a {
     text-decoration: none;
+}
+
+.down a {
     color: rgb(70, 125, 133);
     background-color: #daf2f3;
 }
 
-#down1 a:hover {
-    background-color: rgb(74, 238, 238);
-
-}
 
 
 #titulo-principal {
@@ -155,8 +143,6 @@ nav a:hover {
 .btn {
     margin: 20px;
 }
-
-
 
 /*contacto*/
 
@@ -418,9 +404,9 @@ button .btn {
         max-width: 100%;
         max-height: 100%;
         flex-direction: column;
-        
+
         position: relative;
-        
+
     }
 
 
