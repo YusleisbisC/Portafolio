@@ -17,7 +17,7 @@ header {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    margin-left: 28px;
+    padding: 10px 28px;
     align-items: center;
 }
 
@@ -34,6 +34,8 @@ nav a {
     margin-right: 25px;
     font-weight: bolder;
     color: #43eaf0;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
 nav a:link {
@@ -42,12 +44,10 @@ nav a:link {
 
 nav a:hover {
     background-color: rgb(52, 47, 56);
-    opacity: 0.5px;
 }
 
 
 /*layout*/
-
 
 .down {
     font-size: 20px;
@@ -59,8 +59,6 @@ nav a:hover {
     color: rgb(70, 125, 133);
     background-color: #daf2f3;
 }
-
-
 
 #titulo-principal {
     font-size: large;
@@ -108,6 +106,7 @@ nav a:hover {
     border: 1px solid #ccc;
     margin: 20px 20px;
     width: 18rem;
+    transition: 0.3s;
 }
 
 .card:hover {
@@ -153,12 +152,11 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: 0.5;
+    opacity: 0.7;
 
 }
 
 .cont-title {
-
     text-align: center;
     color: #0d0e0e;
     margin-left: 50px;
@@ -205,42 +203,49 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+label {
+    font-size: 20px;
+  }
+
 footer {
-    overflow: hidden;
-    height: 200px;
-    background-image: url(css-imag/geo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 160px;
+  background-image: url(css-imag/geo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 160px;
+  padding-bottom: 20px;
 }
 
 .title-foot {
     color: #efeff1;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
 
 }
-
-button .btn {
-    cursor: pointer;
+.redes-container {
+    display: flex;
+    margin-left: 10px;
 }
 
-label {
-    font-size: 20px;
+
+.redes {
+    color: white;
+    text-decoration: none;
+    background-color: #0b5ed7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-right: 10px;
 }
+
+  .iconos {
+    margin-right: 8px;
+  }
 
 @media (max-width: 840px) {
 
-    #Header {
-        max-width: 100%;
-        max-height: 100%;
-        flex-direction: row;
-        padding: 16px 0;
-        position: relative;
-
-    }
 
     #facilites {
         background-image: url(css-imag/frecuencia.jpg);
@@ -271,6 +276,7 @@ label {
         margin: 15px 15px;
         animation-name: animation-card;
         animation-duration: 4s;
+        width: 100%;
     }
 
 
@@ -287,7 +293,7 @@ label {
 
 @media (max-width: 621px) {
 
-    Header {
+    header {
         max-width: 100%;
         max-height: 100%;
         flex-direction: column;
@@ -340,8 +346,6 @@ label {
     background-position: center;
     background-attachment: fixed;
     opacity: 0.5;
-
-
 }
 
 textarea {
@@ -362,7 +366,7 @@ button .btn {
 
 }
 
-@media (max-width: 321px) {
+@media (max-width: 375px) {
 
     header {
         max-width: 100%;
@@ -376,8 +380,6 @@ button .btn {
 
     button .btn {
         cursor: pointer;
-
-
     }
 
     footer {
@@ -388,8 +390,6 @@ button .btn {
         background-attachment: fixed;
         flex-direction: column;
         height: fit-content;
-
-
     }
 
     .card {
@@ -400,14 +400,21 @@ button .btn {
         width: 16rem;
     }
 
-    Header {
+    header {
         max-width: 100%;
         max-height: 100%;
         flex-direction: column;
-
         position: relative;
 
     }
-
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    
+      nav a {
+        margin: 0;
+      }
 
 }
