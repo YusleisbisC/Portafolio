@@ -142,6 +142,7 @@ nav a:hover {
 .btn {
     margin: 20px;
 }
+
 .repos {
     display: flex;
     width: 100%;
@@ -151,69 +152,69 @@ nav a:hover {
     border-radius: 16px;
     margin-top: 16px;
     background-color: rgb(189, 236, 230);
-   
-    
-  }
 
-  .repos:hover {
+
+}
+
+.repos:hover {
     background-color: rgb(230, 226, 221);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0);
-    transform: scale(1.1);
+    
 }
 
 
-  .repos-title {
+.repos-title {
     font-size: 1.2rem;
     color: hsl(184, 60%, 55%);
-  }
+}
 
-  .url {
+.url {
     color: #131312;
     font-size: 0.9rem;
     text-decoration: none;
-  }
-  
-  .data {
+}
+
+.data {
     color: #535352;
     font-size: 0.8rem;
     border: 1px solid #dadacb;
     padding: 4px;
     border-radius: 16px;
-  }
-  
-  .punto {
+}
+
+.punto {
     display: flex;
     align-items: center;
-  }
-  
-  .data-punto {
+}
+
+.data-punto {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
-  }
-  
-  .lenguaje {
+}
+
+.lenguaje {
     color: rgb(69, 33, 228);
     font-size: 1rem;
     margin-left: 4px;
-  }
-  
-  .circulo {
+}
+
+.circulo {
     margin: 0;
     padding: 0;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #0b5ed7;
-  }
+}
 
-.respositorios{
+.respositorios {
     width: 100%;
     height: auto;
     margin-top: 24px;
-    
-  }
+
+}
 
 /*contacto*/
 
@@ -263,6 +264,7 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
 }
+
 .error-message {
     color: red;
     font-size: 12px;
@@ -273,6 +275,7 @@ textarea {
     cursor: not-allowed;
     background-color: #d31212;
 }
+
 .formulario input {
     margin: 5px;
 }
@@ -286,16 +289,16 @@ input[type=text] {
 
 label {
     font-size: 20px;
-  }
+}
 
 footer {
-  background-image: url(css-imag/geo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 160px;
-  padding-bottom: 20px;
+    background-image: url(css-imag/geo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 160px;
+    padding-bottom: 20px;
 }
 
 .title-foot {
@@ -303,13 +306,14 @@ footer {
     margin: 10px;
 
 }
+
 .redes-container {
     display: flex;
     margin-left: 10px;
 }
 
 
-  
+
 .redes {
     color: white;
     text-decoration: none;
@@ -322,9 +326,9 @@ footer {
     margin-right: 10px;
 }
 
-  .iconos {
+.iconos {
     margin-right: 8px;
-  }
+}
 
 @media (max-width: 840px) {
 
@@ -489,14 +493,15 @@ button .btn {
         position: relative;
 
     }
+
     nav {
         width: 100%;
         display: flex;
         justify-content: space-around;
-      }
-    
-      nav a {
+    }
+
+    nav a {
         margin: 0;
-      }
+    }
 
 }
