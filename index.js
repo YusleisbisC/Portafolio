@@ -1,13 +1,11 @@
-
-  // Obtener los elementos del formulario
-  let formulario = document.getElementById("form");
+let formulario = document.getElementById("form");
 let nameInput = document.getElementById("name");
 let sobrenombreInput = document.getElementById("Sobrenombre"); // Corregido el ID del elemento
 let emailInput = document.getElementById("email");
 let submitBtn = document.getElementById("submit-btn");
 let repositorios = document.getElementById("repositories");
 
-// Validar el campo de nombre cuando cambia
+
 nameInput.addEventListener("input", () => {
   let name = nameInput.value.trim();
   let nameError = document.getElementById("name-error");
@@ -23,7 +21,7 @@ nameInput.addEventListener("input", () => {
 
 sobrenombreInput.addEventListener("input", () => {
   let sobrenombre = sobrenombreInput.value.trim();
-  let sobrenombreError = document.getElementById("Sobrenombre-error"); // Corregido el ID del elemento
+  let sobrenombreError = document.getElementById("Sobrenombre-error"); 
 
   if (sobrenombre === "") {
     sobrenombreError.textContent = "Digite seu sobrenombre";
@@ -51,7 +49,7 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
-formulario.addEventListener("submit", function (event) { // Cambiado 'form' por 'formulario'
+formulario.addEventListener("submit", function (event) { 
   event.preventDefault();
 });
 
